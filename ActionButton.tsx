@@ -3,9 +3,24 @@ import { useActionSheet } from "@expo/react-native-action-sheet";
 import { View, Button, Alert } from "react-native";
 const { showActionSheetWithOptions } = useActionSheet();
 
-// #1 IM
+// #1 Importamos el createnavigator
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
+// #2 Lo que veremos
+import { AppinfoPage } from "./pages/AppinfoPage";
+
+const HomeStackNavigator = createNativeStackNavigator();
+
+function MyStack(){
+  return(
+    <HomeStackNavigator.Navigator>
+      <HomeStackNavigator.Screen 
+        name="Info"
+        component={ AppinfoPage }
+      />
+    </HomeStackNavigator.Navigator>
+  )
+}
 
 const openSheet = () => {
   const options = ["Delete", "Save", "Cancel"];
@@ -37,11 +52,10 @@ return (
   <View>
     <Button title="Dame clic" onPress={() => openSheet()} />
   </View>
-)
+);
 }
 
 export default function ActionButton() {
-
   return (
     <View>
       <Button title="More actions" onPress={() => openSheet()} />
