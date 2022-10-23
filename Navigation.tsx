@@ -29,7 +29,6 @@ function MyTab() {
                 tabBarActiveTintColor: 'black',
             }}
         >
-
             
             {/* 
                 Creamos las SCREENS de nuestras Screens importadas, y les asignamos un nombre, puede ser el que nosotros queramos, pero de preferencia debe de ser un nombre descriptivo
