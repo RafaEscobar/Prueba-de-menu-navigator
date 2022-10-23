@@ -30,7 +30,7 @@ const AddBottomSheet = () => {
 					index={-1}
 					snapPoints={snapPoints}
 					onChange={handleSheetChanges}
-          
+          // oejofe
 					>
 					<View style={styles.contentContainer}>
 						<Text style={styles.bottomSheetTitle}>Add Customer</Text>
