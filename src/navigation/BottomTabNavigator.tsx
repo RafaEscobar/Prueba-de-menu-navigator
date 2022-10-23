@@ -5,7 +5,7 @@ import { StyleSheet } from 'react-native';
 import * as React from 'react';
 import { HomeScreen } from '../screens/HomeScreen';
 import { AboutScreen } from '../screens/AboutScreen';
-import {AddBottomSheet} from '../components/AddBottomSheet';
+import AddBottomSheet from '../components/AddBottomSheet';
 
 import { 
     BottomTabParamList,
